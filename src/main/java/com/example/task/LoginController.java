@@ -1,19 +1,18 @@
 package com.example.task;
 
-import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
+
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
 public class LoginController {
+
+    private MainController mainController;
 
     @FXML
     private ResourceBundle resources;
@@ -38,21 +37,29 @@ public class LoginController {
 
     @FXML
     void initialize() {
-        registerButton.setOnAction(actionEvent -> {
-            registerButton.getScene().getWindow().hide();
-
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(HelloApplication.class.getResource("sign-app.fxml"));
-            try {
-                loader.load();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.showAndWait();
-        });
+        registerButton.setOnAction(event -> onAuthorizationButtonClicked());
+        loginButton.setOnAction(event -> loginButtonAction());
     }
 
+    public void setMainController(MainController mainController) {
+        this.mainController = mainController;
+    }
+
+    public void onAuthorizationButtonClicked() {
+        mainController.showAuthorizationScene();
+    }
+
+    public void loginButtonAction() {
+        String username = usernameField.getText();
+        String password = passwordField.getText();
+        if (DatabaseManager.validateUser(username, password)) {
+            Users.setCurrentUser(username);
+            mainController.showProjectScene();
+            MainProjectController mainProjectController = mainController.getMainProjectController();
+            mainProjectController.loadData(username);
+        } else {
+            System.out.println("login fail");
+            // Login failed, show an error message
+        }
+    }
 }

@@ -12,22 +12,22 @@
     <children>
         <TextField fx:id="usernameField" layoutX="63.0" layoutY="82.0" prefHeight="25.0" prefWidth="393.0" promptText="username" style="-fx-border-radius: 5; -fx-background-color: #1C1E21; -fx-border-color: silver;" />
         <PasswordField fx:id="passwordField" layoutX="63.0" layoutY="129.0" prefHeight="25.0" prefWidth="393.0" promptText="password" style="-fx-background-color: #1C1E21; -fx-border-color: silver; -fx-border-radius: 5;" />
-        <Label layoutX="198.0" layoutY="40.0" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #34383D;" text="Sign in form" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+        <Label layoutX="198.0" layoutY="40.0" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #34383D;" text="Окно входа" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
             <font>
                 <Font name="Microsoft New Tai Lue" size="18.0" />
             </font>
         </Label>
-        <Button fx:id="loginButton" layoutX="322.0" layoutY="175.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="134.0" style="-fx-background-color: #1C1E21; -fx-border-radius: 10;" text="Вход" textFill="WHITE" textOverrun="CLIP">
+        <Button fx:id="loginButton" layoutX="322.0" layoutY="175.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="134.0" style="-fx-background-color: #1C1E21; -fx-border-color: silver; -fx-border-radius: 10; -fx-background-radius: 10;" text="Вход" textFill="WHITE" textOverrun="CLIP">
             <font>
                 <Font name="Microsoft New Tai Lue" size="12.0" />
             </font>
         </Button>
-        <CheckBox fx:id="rememberMeBox" layoutX="322.0" layoutY="220.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: #34383D;" text="Запомнить меня?" textAlignment="CENTER" textFill="WHITE">
+        <CheckBox fx:id="rememberMeBox" layoutX="322.0" layoutY="220.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: #34383D; -fx-background-radius: 15;" text="Запомнить меня?" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font name="Microsoft New Tai Lue" size="12.0" />
             </font>
         </CheckBox>
-      <Button fx:id="registerButton" layoutX="63.0" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #1C1E21; -fx-border-radius: 10;" text="Регистрация" textFill="#fffefe">
+      <Button fx:id="registerButton" layoutX="63.0" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #1C1E21; -fx-border-radius: 10; -fx-border-color: silver; -fx-background-radius: 10;" text="Регистрация" textFill="#fffefe">
          <font>
             <Font name="Microsoft New Tai Lue" size="12.0" />
          </font>
