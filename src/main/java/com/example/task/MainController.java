@@ -9,17 +9,20 @@ import java.io.IOException;
 
 public class MainController {
     private MainProjectController mainProjectController;
+    private ProjectWindowController projectWindowController;
+    private projectDetailController projectDetailController;
     public static MainController instance;
-    private String currentUsername;
+    private Projects projects;
     private Stage primaryStage;
     private Scene loginScene;
     private Scene authorizationScene;
     private Scene projectScene;
+    private Scene windowProjectScene;
+    private Scene projectDetailScene;
 
     public MainController(Stage primaryStage) {
         this.primaryStage = primaryStage;
         instance = this;
-        System.out.println("MainController instance created");
     }
 
     public void loadScenes() throws Exception {
@@ -41,6 +44,17 @@ public class MainController {
         mainProjectController.setMainController(this);
         projectScene = new Scene(mainRoot);
 
+        FXMLLoader windowProjectLoader = new FXMLLoader(getClass().getResource("project-window.fxml"));
+        Parent windowProjectRoot = windowProjectLoader.load();
+        projectWindowController = windowProjectLoader.getController();
+        projectWindowController.setMainController(this);
+        windowProjectScene = new Scene(windowProjectRoot);
+
+        FXMLLoader projectDetailLoader = new FXMLLoader(getClass().getResource("project-detail.fxml"));
+        Parent projectDetailRoot = projectDetailLoader.load();
+        projectDetailController = projectDetailLoader.getController();
+        projectDetailController.setMainController(this);
+        projectDetailScene = new Scene(projectDetailRoot);
     }
 
     public void showLoginScene() throws IOException {
@@ -51,6 +65,14 @@ public class MainController {
         primaryStage.setTitle("Project manager");
         primaryStage.getIcons().add(new Image(getClass().getResource("icon.png").openStream()));
 
+    }
+
+    public void showWindowProject() {
+        primaryStage.setScene(windowProjectScene);
+        primaryStage.show();
+        primaryStage.setResizable(false);
+        primaryStage.isAlwaysOnTop();
+        primaryStage.setTitle("Проект");
     }
 
     public void showAuthorizationScene() {
@@ -68,7 +90,19 @@ public class MainController {
         primaryStage.alwaysOnTopProperty();
         primaryStage.setTitle("Project manager");
     }
+    public void showProjectDetail(Projects projects) {
+        projectDetailController.setProject(projects);
+        primaryStage.setScene(projectDetailScene);
+    }
     public MainProjectController getMainProjectController() {
         return mainProjectController;
     }
+    public ProjectWindowController getProjectWindowController() {
+        return projectWindowController;
+    }
+
+    public void setProjectWindowController(ProjectWindowController projectWindowController) {
+        this.projectWindowController = projectWindowController;
+    }
+
 }

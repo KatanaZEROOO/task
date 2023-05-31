@@ -5,23 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26757991-c31e-45a1-bf42-d3049f429bed" name="Changes" comment="new">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/task/DatabaseManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/task/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/task/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/task/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/task/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/task/ProjectWindowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/task/Projects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/task/projectDetailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/task/project-detail.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/task/project-window.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/task/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/task/DatabaseManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/task/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/task/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/task/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/task/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/task/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/task/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/task/MainProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/task/MainProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/task/SingAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/task/AuthorizationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/task/login-app.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/task/login-app.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/task/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/task/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/task/main-project.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/task/main-project.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/task/sign-app.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/task/authorization-app.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +34,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="825a0015-5666-4a85-8755-bbd87eef88df" />
+        <option name="url" value="https://github.com/KatanaZEROOO/task.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -109,7 +118,9 @@
       <workItem from="1683197183012" duration="5618000" />
       <workItem from="1683785722701" duration="11098000" />
       <workItem from="1683807049419" duration="52993000" />
-      <workItem from="1684304460233" duration="14302000" />
+      <workItem from="1684304460233" duration="69114000" />
+      <workItem from="1685520405129" duration="181000" />
+      <workItem from="1685523379453" duration="8523000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1683878087716</created>
@@ -118,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683878087716</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new">
+      <created>1684328776223</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684328776223</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

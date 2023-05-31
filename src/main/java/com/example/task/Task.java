@@ -5,9 +5,14 @@ import javafx.beans.property.StringProperty;
 
 public class Task {
     private final StringProperty taskDescription;
-
+    private int id;
     public Task(String taskDescription) {
         this.taskDescription = new SimpleStringProperty(taskDescription);
+        this.id = -1;
+    }
+    public Task(String taskDescription, int id) {
+        this.taskDescription = new SimpleStringProperty(taskDescription);
+        this.id = id;
     }
 
     public String getTaskDescription() {
@@ -20,6 +25,12 @@ public class Task {
 
     public StringProperty taskDescriptionProperty() {
         return taskDescription;
+    }
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
     }
 }
 

@@ -57,6 +57,7 @@ public class LoginController {
             mainController.showProjectScene();
             MainProjectController mainProjectController = mainController.getMainProjectController();
             mainProjectController.loadData(username);
+            mainProjectController.loadProject();
         } else {
             System.out.println("login fail");
             // Login failed, show an error message

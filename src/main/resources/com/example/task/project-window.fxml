@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="920.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task.ProjectWindowController">
+   <children>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="881.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" style="-fx-background-radius: 10;" text="Назад" />
+      <Button fx:id="saveButton" layoutX="1360.0" layoutY="881.0" mnemonicParsing="false" style="-fx-background-radius: 10;" text="Сохранить" />
+      <TextField fx:id="projectNameField" layoutX="14.0" layoutY="39.0" prefHeight="25.0" prefWidth="306.0" />
+      <DatePicker fx:id="dataPicker" layoutX="1165.0" layoutY="64.0" prefHeight="215.0" prefWidth="123.0" />
+      <ComboBox fx:id="whoWorkComboBox" layoutX="1165.0" layoutY="298.0" prefHeight="25.0" prefWidth="252.0" promptText="Кто занимается проектом" />
+      <TextArea fx:id="descriptionProject" layoutX="14.0" layoutY="93.0" prefHeight="673.0" prefWidth="1102.0" />
+      <ListView fx:id="projectResources" layoutX="1165.0" layoutY="610.0" prefHeight="156.0" prefWidth="252.0" />
+      <ComboBox fx:id="priorityComboBox" layoutX="1165.0" layoutY="512.0" prefHeight="25.0" prefWidth="252.0" promptText="Важность проекта" />
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя проекта" wrappingWidth="306.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Описание проекта" wrappingWidth="306.0">
+         <font>
+            <Font name="Microsoft New Tai Lue" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1165.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Начало" wrappingWidth="123.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1165.0" layoutY="593.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Файлы проекта" wrappingWidth="252.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="endDataPicker" layoutX="1299.0" layoutY="64.0" prefHeight="215.0" prefWidth="123.0" />
+      <Text layoutX="1299.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Конец" wrappingWidth="123.0" />
+      <ComboBox fx:id="statusComboBox" layoutX="1165.0" layoutY="545.0" prefHeight="25.0" prefWidth="252.0" promptText="Статус" />
+      <ListView fx:id="whoWorkListView" layoutX="1165.0" layoutY="349.0" prefHeight="104.0" prefWidth="252.0" />
+      <Button fx:id="addUser" layoutX="1165.0" layoutY="460.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="252.0" text="Добавить" />
+   </children>
+</AnchorPane>
